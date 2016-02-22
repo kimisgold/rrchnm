@@ -43,7 +43,7 @@ html {
 /* @group ----- 02. Text elements ----- */
 
 a {
-    color: $primary-red;
+    color: lighten(saturate($primary-red, 15%), 5%);
     text-decoration: none;
 }
 
@@ -53,7 +53,7 @@ h1 {
     font-size: 2 * $base-font-size;
     line-height: 2 * $base-line-height;
     margin: 0 0 0 rhythm(-.25, 2 * $base-font-size);
-    background-color: $primary-blue;
+    background-color: $primary-red;
     padding: rhythm(.25, 2 * $base-font-size);
     display: inline-block;
     text-shadow: none;
@@ -82,7 +82,7 @@ h2 {
 .button,
 button,
 input[type="submit"] {
-    background-color: $primary-red;
+    background-color: $primary-blue;
     padding: rhythm(.25) rhythm(.5);
     color: #fff;
     font-family: "Open Sans", sans-serif;
@@ -126,12 +126,17 @@ header {
     overflow: hidden;
     @include container($container-width);
     padding: rhythm();
+    background-color: $slate;
+}
+
+header a {
+    color: #fff;
 }
 
 .logo {
     height: rhythm(2);
     width: rhythm(11);
-    background:url('../img/rrchnm-logo.png') no-repeat;
+    background:url('../img/rrchnm-logo-invert.png') no-repeat;
     background-size: cover;
 }
 
@@ -211,7 +216,7 @@ footer img {
 }
 
 .home #intro .container > a {
-    background-color: $primary-red;
+    background-color: $primary-blue;
     color: #fff;
     font-family: "Open Sans", sans-serif;
     text-transform: uppercase;
@@ -222,7 +227,7 @@ footer img {
 }
 
 #features {
-    background-color: $primary-blue;
+    background-color: $primary-red;
     color: #fff;
     padding: rhythm();
     text-align: center;
@@ -235,7 +240,7 @@ footer img {
 }
 
 #features a {
-    color: saturate(lighten($primary-blue, 50%), 50%);
+    color: saturate(lighten($primary-red, 50%), 50%);
     font-family: "Oswald", sans-serif;
     text-transform: uppercase;
     font-weight: 300;
@@ -248,7 +253,7 @@ footer img {
     font-family: "Oswald", sans-serif;
     font-size: 1.5 * $base-font-size;
     margin-bottom: rhythm(1, 1.5 * $base-font-size);
-    border-bottom: 1px solid rgba(255,255,255,.08);
+    border-bottom: 1px solid rgba(0,0,0,.08);
     padding: 0 rhythm(1, 1.5 * $base-font-size) rhythm(1, 1.5 * $base-font-size);
     font-weight: 300;
     text-align: center;
@@ -262,13 +267,7 @@ footer img {
 }
 
 #keep-up {
-    background-color: $primary-red;
-    color: #fff;
     overflow: hidden
-}
-
-#keep-up a {
-    color: lighten($primary-red, 50%);
 }
 
 #keep-up .twitter-icon,
@@ -407,7 +406,7 @@ footer img {
 /* @group ----- 11. Our Story ----- */
 
 .our-story .preface {
-    background-color: $primary-red;
+    background-color: $primary-blue;
     color: #fff;
 }
 
