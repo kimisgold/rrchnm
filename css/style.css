@@ -1,0 +1,1130 @@
+@charset "UTF-8";
+/*! normalize.css v2.1.3 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+/* line 11, ../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-normalize-plugin-0.4.2/scss/normalize/_html5.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+/* line 30, ../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-normalize-plugin-0.4.2/scss/normalize/_html5.scss */
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 41, ../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-normalize-plugin-0.4.2/scss/normalize/_html5.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9.
+ * Hide the `template` element in IE, Safari, and Firefox < 22.
+ */
+/* line 51, ../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-normalize-plugin-0.4.2/scss/normalize/_html5.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 13, ../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-normalize-plugin-0.4.2/scss/normalize/_base.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+/* line 23, ../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-normalize-plugin-0.4.2/scss/normalize/_base.scss */
+body {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 11, ../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-normalize-plugin-0.4.2/scss/normalize/_links.scss */
+a {
+  background: transparent;
+}
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+/* line 19, ../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-normalize-plugin-0.4.2/scss/normalize/_links.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 27, ../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-normalize-plugin-0.4.2/scss/normalize/_links.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 12, ../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-normalize-plugin-0.4.2/scss/normalize/_typography.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+/* line 21, ../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-normalize-plugin-0.4.2/scss/normalize/_typography.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 29, ../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-normalize-plugin-0.4.2/scss/normalize/_typography.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+/* line 38, ../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-normalize-plugin-0.4.2/scss/normalize/_typography.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 46, ../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-normalize-plugin-0.4.2/scss/normalize/_typography.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 56, ../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-normalize-plugin-0.4.2/scss/normalize/_typography.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+/* line 65, ../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-normalize-plugin-0.4.2/scss/normalize/_typography.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+/* line 77, ../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-normalize-plugin-0.4.2/scss/normalize/_typography.scss */
+pre {
+  white-space: pre-wrap;
+}
+
+/**
+ * Set consistent quote types.
+ */
+/* line 85, ../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-normalize-plugin-0.4.2/scss/normalize/_typography.scss */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 93, ../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-normalize-plugin-0.4.2/scss/normalize/_typography.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 101, ../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-normalize-plugin-0.4.2/scss/normalize/_typography.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 109, ../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-normalize-plugin-0.4.2/scss/normalize/_typography.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 113, ../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-normalize-plugin-0.4.2/scss/normalize/_typography.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+/* line 11, ../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-normalize-plugin-0.4.2/scss/normalize/_embedded.scss */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+/* line 19, ../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-normalize-plugin-0.4.2/scss/normalize/_embedded.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+/* line 11, ../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-normalize-plugin-0.4.2/scss/normalize/_figures.scss */
+figure {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 11, ../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-normalize-plugin-0.4.2/scss/normalize/_forms.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 22, ../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-normalize-plugin-0.4.2/scss/normalize/_forms.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 33, ../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-normalize-plugin-0.4.2/scss/normalize/_forms.scss */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 47, ../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-normalize-plugin-0.4.2/scss/normalize/_forms.scss */
+button,
+input {
+  line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+/* line 59, ../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-normalize-plugin-0.4.2/scss/normalize/_forms.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 72, ../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-normalize-plugin-0.4.2/scss/normalize/_forms.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 84, ../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-normalize-plugin-0.4.2/scss/normalize/_forms.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 94, ../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-normalize-plugin-0.4.2/scss/normalize/_forms.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 106, ../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-normalize-plugin-0.4.2/scss/normalize/_forms.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+/* line 118, ../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-normalize-plugin-0.4.2/scss/normalize/_forms.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 127, ../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-normalize-plugin-0.4.2/scss/normalize/_forms.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+/* line 138, ../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-normalize-plugin-0.4.2/scss/normalize/_forms.scss */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 10, ../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-normalize-plugin-0.4.2/scss/normalize/_tables.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@media screen {
+  /* @group ----- 01. Container elements ----- */
+  /* line 3, sass/_mobile.scss */
+  * {
+    box-sizing: border-box;
+  }
+
+  /* line 7, sass/_mobile.scss */
+  html {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  /* line 13, sass/_mobile.scss */
+  #content,
+  .container {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+  }
+  /* line 12, ../../../.rvm/gems/ruby-2.0.0-p0/gems/susy-2.2.6/sass/susy/output/support/_clearfix.scss */
+  #content:after,
+  .container:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+
+  /* line 19, sass/_mobile.scss */
+  #intro {
+    color: #fff;
+    padding: 1.5em 0;
+    text-shadow: 0 0 20px #000;
+    position: relative;
+  }
+  /* line 25, sass/_mobile.scss */
+  #intro:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.39);
+  }
+
+  /* line 36, sass/_mobile.scss */
+  #intro .container > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  /* @end */
+  /* @group ----- 02. Text elements ----- */
+  /* line 45, sass/_mobile.scss */
+  a {
+    color: #b3252d;
+    text-decoration: none;
+  }
+
+  /* line 50, sass/_mobile.scss */
+  h1 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 48px;
+    margin: 0 0 0 -0.1875em;
+    background-color: #3d505f;
+    padding: 0.1875em;
+    display: inline-block;
+    text-shadow: none;
+    color: #fff;
+  }
+
+  /* line 63, sass/_mobile.scss */
+  h2 {
+    font-size: 28px;
+    line-height: 48px;
+  }
+
+  /* line 68, sass/_mobile.scss */
+  #intro h1 em {
+    font-style: normal;
+    text-transform: uppercase;
+  }
+
+  /* line 73, sass/_mobile.scss */
+  #intro p {
+    font-size: 24px;
+    line-height: 48px;
+  }
+
+  /* @end */
+  /* @group ----- 03. Form elements ----- */
+  /* line 82, sass/_mobile.scss */
+  .button,
+  button,
+  input[type="submit"] {
+    background-color: #b3252d;
+    padding: 0.375em 0.75em;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    display: inline-block;
+  }
+  /* line 93, sass/_mobile.scss */
+  .button.big,
+  button.big,
+  input[type="submit"].big {
+    font-size: 24px;
+    padding: 0.5em;
+  }
+
+  /* line 99, sass/_mobile.scss */
+  #intro .button {
+    text-shadow: none;
+    text-transform: uppercase;
+    font-size: 24px;
+    padding: 0.25em 0.5em;
+  }
+  /* line 105, sass/_mobile.scss */
+  #intro .button:after {
+    content: "";
+    font-family: "FontAwesome";
+    margin-left: 0.25em;
+  }
+
+  /* @end */
+  /* @group ----- 04. Navigation ----- */
+  /* line 116, sass/_mobile.scss */
+  nav ul {
+    padding-left: 0;
+    list-style-type: none;
+  }
+
+  /* @end */
+  /* @group ----- 05. Header ----- */
+  /* line 125, sass/_mobile.scss */
+  header {
+    overflow: hidden;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+  }
+  /* line 12, ../../../.rvm/gems/ruby-2.0.0-p0/gems/susy-2.2.6/sass/susy/output/support/_clearfix.scss */
+  header:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+
+  /* line 131, sass/_mobile.scss */
+  .logo {
+    height: 3em;
+    width: 16.5em;
+    background: url("../img/rrchnm-logo.png") no-repeat;
+    background-size: cover;
+  }
+
+  /* line 138, sass/_mobile.scss */
+  .logo a {
+    height: 100%;
+    width: 100%;
+    text-indent: -9999px;
+    text-align: left;
+    display: block;
+  }
+
+  /* line 146, sass/_mobile.scss */
+  nav#global .mobile-toggle:before {
+    content: "";
+    font-family: "FontAwesome";
+    position: absolute;
+    top: 1.5em;
+    right: 1.5em;
+    color: #b3252d;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    padding: 0.375em;
+    display: block;
+    width: 1.5em;
+    text-align: center;
+  }
+
+  /* line 160, sass/_mobile.scss */
+  nav#global a {
+    font-weight: 700;
+  }
+
+  /* line 164, sass/_mobile.scss */
+  nav#global ul {
+    display: none;
+    margin: 1.5em 0 0;
+    padding-left: 0;
+    list-style-type: none;
+  }
+
+  /* line 171, sass/_mobile.scss */
+  nav#global li:not(:last-child) {
+    border-color: rgba(0, 0, 0, 0.08);
+    border-bottom-width: 0.0625em;
+    border-bottom-style: solid;
+    padding-bottom: 0.3125em;
+    margin-bottom: 0.375em;
+  }
+
+  /* @end */
+  /* @group ----- 06. Footer ----- */
+  /* line 181, sass/_mobile.scss */
+  footer {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+  }
+  /* line 12, ../../../.rvm/gems/ruby-2.0.0-p0/gems/susy-2.2.6/sass/susy/output/support/_clearfix.scss */
+  footer:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+
+  /* line 187, sass/_mobile.scss */
+  footer img {
+    max-height: 4.5em;
+    width: auto;
+  }
+
+  /* @end */
+  /* @group ----- 07. Home ----- */
+  /* line 196, sass/_mobile.scss */
+  .home #intro {
+    background: url("../img/intro-bg.png") top center no-repeat;
+    background-size: cover;
+  }
+
+  /* line 201, sass/_mobile.scss */
+  .home #intro .container > * {
+    display: inline;
+  }
+
+  /* line 205, sass/_mobile.scss */
+  .home #intro p {
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 48px;
+    margin: 0 auto;
+  }
+
+  /* line 213, sass/_mobile.scss */
+  .home #intro .container > a {
+    background-color: #b3252d;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    text-shadow: none;
+    font-size: 16px;
+    padding: 0.375em 0.75em;
+    display: inline-block;
+  }
+
+  /* line 224, sass/_mobile.scss */
+  #features {
+    background-color: #3d505f;
+    color: #fff;
+    padding: 1.5em;
+    text-align: center;
+  }
+
+  /* line 231, sass/_mobile.scss */
+  .feature:not(:last-child) {
+    margin-bottom: 1.5em;
+    border-color: rgba(255, 255, 255, 0.15);
+    border-bottom-width: 0.0625em;
+    border-bottom-style: solid;
+    padding-bottom: 1.4375em;
+  }
+
+  /* line 237, sass/_mobile.scss */
+  #features a {
+    color: #aad2f1;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 28px;
+    display: block;
+  }
+
+  /* line 246, sass/_mobile.scss */
+  .hub-link {
+    display: block;
+    font-family: "Oswald", sans-serif;
+    font-size: 24px;
+    margin-bottom: 1em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 0 1em 1em;
+    font-weight: 300;
+    text-align: center;
+  }
+  /* line 256, sass/_mobile.scss */
+  .hub-link:after {
+    content: "";
+    font-family: "FontAwesome";
+    display: inline-block;
+    margin-left: 0.25em;
+  }
+
+  /* line 264, sass/_mobile.scss */
+  #keep-up {
+    background-color: #b3252d;
+    color: #fff;
+    overflow: hidden;
+  }
+
+  /* line 270, sass/_mobile.scss */
+  #keep-up a {
+    color: #f8dfe0;
+  }
+
+  /* line 274, sass/_mobile.scss */
+  #keep-up .twitter-icon,
+  #keep-up .facebook-icon {
+    background-color: #fff;
+    color: #b3252d;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    margin: 0.375em 0;
+    text-align: center;
+  }
+
+  /* line 285, sass/_mobile.scss */
+  #keep-up .twitter-icon:before {
+    content: "";
+    font-family: "FontAwesome";
+  }
+
+  /* line 290, sass/_mobile.scss */
+  #keep-up .facebook-icon:before {
+    content: "";
+    font-family: "FontAwesome";
+  }
+
+  /* line 295, sass/_mobile.scss */
+  #keep-up .button {
+    background-color: #fff;
+    color: #b3252d;
+  }
+
+  /* line 300, sass/_mobile.scss */
+  #keep-up nav > ul > li {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 1.5em;
+  }
+
+  /* line 306, sass/_mobile.scss */
+  #keep-up nav ul > li > ul {
+    text-transform: none;
+    font-weight: normal;
+  }
+
+  /* @end */
+  /* @group ----- 08. Who We Are ----- */
+  /* line 315, sass/_mobile.scss */
+  .who-we-are #intro {
+    background: url("../img/whoweare-bg.jpg") center no-repeat;
+    background-size: cover;
+  }
+  /* line 319, sass/_mobile.scss */
+  .who-we-are #intro:after {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  /* line 324, sass/_mobile.scss */
+  .who-we-are #content nav {
+    background-color: #b3252d;
+    color: #fff;
+    padding: 1.5em;
+    margin-top: 1.5em;
+  }
+
+  /* line 331, sass/_mobile.scss */
+  .who-we-are #content nav h2 {
+    margin-top: 0;
+    text-transform: uppercase;
+    font-size: 24px;
+  }
+
+  /* line 337, sass/_mobile.scss */
+  .who-we-are #content nav a {
+    color: #f8dfe0;
+  }
+
+  /* line 341, sass/_mobile.scss */
+  .who-we-are #content nav ul {
+    margin-bottom: 0;
+  }
+
+  /* line 345, sass/_mobile.scss */
+  .who-we-are #content nav > ul > li {
+    text-transform: uppercase;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    margin-bottom: 1.2em;
+    font-weight: 300;
+  }
+  /* line 352, sass/_mobile.scss */
+  .who-we-are #content nav > ul > li:last-of-type {
+    margin-bottom: 0;
+  }
+
+  /* line 357, sass/_mobile.scss */
+  .who-we-are #content nav > ul > li ul {
+    text-transform: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+  }
+
+  /* line 363, sass/_mobile.scss */
+  .person {
+    width: 100%;
+    text-align: left;
+    overflow: hidden;
+    margin: 1.5em 0;
+  }
+
+  /* line 370, sass/_mobile.scss */
+  .person .image {
+    background-color: rgba(0, 0, 0, 0.08);
+    width: 9em;
+    height: 9em;
+    float: left;
+    margin-right: 1.5em;
+  }
+
+  /* @end */
+  /* @group ----- 09. What We Do ----- */
+  /* line 382, sass/_mobile.scss */
+  .what-we-do #intro {
+    background: url("../img/whatwedo-bg.png") center no-repeat;
+    background-size: cover;
+  }
+  /* line 386, sass/_mobile.scss */
+  .what-we-do #intro:after {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  /* @end */
+  /* @group ----- 10. Who We Work With ----- */
+  /* line 396, sass/_mobile.scss */
+  .collab-type .entity {
+    display: block;
+    font-weight: bold;
+  }
+
+  /* line 401, sass/_mobile.scss */
+  .collab-type .project {
+    font-style: italic;
+  }
+
+  /* @end */
+  /* @group ----- 11. Our Story ----- */
+  /* line 409, sass/_mobile.scss */
+  .our-story .preface {
+    background-color: #b3252d;
+    color: #fff;
+  }
+
+  /* line 414, sass/_mobile.scss */
+  .our-story .preface h2 {
+    margin: 0;
+  }
+
+  /* @end */
+}
+@media screen and (min-width: 800px) {
+  /* @group ----- 02. Text Elements ----- */
+  /* line 3, sass/_desktop.scss */
+  #intro h1 {
+    font-size: 48px;
+    line-height: 72px;
+  }
+
+  /* @end */
+  /* @group ----- 05. Header ----- */
+  /* line 12, sass/_desktop.scss */
+  header {
+    text-align: right;
+    position: relative;
+  }
+
+  /* line 17, sass/_desktop.scss */
+  .logo {
+    float: left;
+    height: 2.25em;
+    width: 12.375em;
+  }
+
+  /* line 23, sass/_desktop.scss */
+  nav#global {
+    display: inline-block;
+    height: 2.25em;
+    vertical-align: bottom;
+    text-align: right;
+  }
+
+  /* line 30, sass/_desktop.scss */
+  nav#global .mobile-toggle {
+    display: none;
+  }
+
+  /* line 34, sass/_desktop.scss */
+  nav#global ul {
+    margin: 0;
+    display: block !important;
+  }
+
+  /* line 39, sass/_desktop.scss */
+  nav#global li {
+    display: inline-block;
+    margin: 0.75em 0 0 0.75em;
+  }
+  /* line 43, sass/_desktop.scss */
+  nav#global li:not(:last-child) {
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  /* @end */
+  /* @group ----- 06. Footer ----- */
+  /* line 53, sass/_desktop.scss */
+  footer nav {
+    float: right;
+  }
+
+  /* line 57, sass/_desktop.scss */
+  footer nav ul {
+    margin: 0;
+  }
+
+  /* line 61, sass/_desktop.scss */
+  footer nav li {
+    display: inline-block;
+    margin-left: 0.75em;
+  }
+
+  /* line 66, sass/_desktop.scss */
+  footer .copyright {
+    clear: both;
+    display: block;
+    margin: 4.5em 0 0;
+  }
+
+  /* @end */
+  /* @group ----- 07. Home ----- */
+  /* line 76, sass/_desktop.scss */
+  .home #intro {
+    padding: 4.5em 0;
+  }
+
+  /* line 80, sass/_desktop.scss */
+  .home #intro .container > p {
+    font-size: 48px;
+    line-height: 72px;
+  }
+
+  /* line 85, sass/_desktop.scss */
+  .home #intro .container > a {
+    font-size: 32px;
+    padding: 0.375em;
+  }
+
+  /* line 90, sass/_desktop.scss */
+  #features {
+    overflow: hidden;
+    padding: 1.5em 0;
+    font-size: 16px;
+    text-align: left;
+  }
+
+  /* line 97, sass/_desktop.scss */
+  .feature {
+    width: 32.20339%;
+    float: left;
+  }
+
+  /* line 102, sass/_desktop.scss */
+  #features a {
+    font-size: 40px;
+    line-height: 48px;
+    display: block;
+  }
+
+  /* line 108, sass/_desktop.scss */
+  .feature:not(:last-child) {
+    margin-bottom: 0;
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  /* line 114, sass/_desktop.scss */
+  #keep-up {
+    vertical-align: top;
+  }
+
+  /* line 118, sass/_desktop.scss */
+  .follow {
+    width: 32.20339%;
+    float: left;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  /* line 125, sass/_desktop.scss */
+  .follow .button {
+    text-transform: none;
+    font-weight: normal;
+  }
+
+  /* line 130, sass/_desktop.scss */
+  #keep-up nav {
+    float: left;
+    width: 66.10169%;
+  }
+
+  /* line 135, sass/_desktop.scss */
+  #keep-up nav > ul > li {
+    width: 48.71795%;
+    display: inline-block;
+  }
+
+  /* line 140, sass/_desktop.scss */
+  #keep-up nav > ul > li:not(:last-child) {
+    float: left;
+    clear: left;
+  }
+
+  /* @end */
+  /* @group ----- 09. Who We Are ----- */
+  /* line 149, sass/_desktop.scss */
+  .who-we-are #content nav {
+    width: 23.72881%;
+    float: left;
+  }
+
+  /* line 154, sass/_desktop.scss */
+  .staff {
+    width: 74.57627%;
+    float: left;
+    padding: 1.5em;
+  }
+
+  /* line 160, sass/_desktop.scss */
+  .person {
+    display: inline-block;
+    width: -moz-min-content;
+    width: -webkit-min-content;
+    width: min-content;
+    text-align: center;
+    margin: 0 1.5em 1.5em;
+  }
+
+  /* line 169, sass/_desktop.scss */
+  .person .image {
+    float: none;
+    margin: 0;
+  }
+
+  /* line 174, sass/_desktop.scss */
+  .person .name,
+  .person .position {
+    display: block;
+  }
+
+  /* @end */
+  /* @group ----- 10. Who We Work With ----- */
+  /* line 182, sass/_desktop.scss */
+  .collaborations {
+    overflow: hidden;
+  }
+
+  /* line 186, sass/_desktop.scss */
+  .collab-type {
+    width: 49.15254%;
+    padding: 1.5em;
+    float: left;
+  }
+  /* line 191, sass/_desktop.scss */
+  .collab-type:first-of-type {
+    padding-left: 0;
+  }
+  /* line 195, sass/_desktop.scss */
+  .collab-type:last-of-type {
+    padding-right: 0;
+  }
+
+  /* line 200, sass/_desktop.scss */
+  .collab-type:last-of-type:after {
+    content: "";
+    display: block;
+    height: 0;
+    width: 100%;
+    clear: both;
+  }
+
+  /* @end */
+}
