@@ -8,6 +8,7 @@ html {
     font-family: "Open Sans", sans-serif;
     font-size: $base-font-size;
     line-height: $base-line-height;
+    color: #656565;
 }
 
 #content,
@@ -17,19 +18,20 @@ html {
 }
 
 #intro {
-    color: #fff;
     padding: rhythm() 0;
-    text-shadow: 0 0 20px #000;
+    text-shadow: 0 0 20px #fff;
     position: relative;
+    border-top: 1px solid $gray;
+    border-bottom: 1px solid $gray;
 
-    &:after {
+    &:before {
         content: "";
         position: absolute;
         top: 0;
         bottom: 0;
         right: 0;
         left: 0;
-        background-color: rgba(0,0,0,.39);
+        opacity: .15;
     }
 }
 
@@ -53,11 +55,11 @@ h1 {
     font-size: 2 * $base-font-size;
     line-height: 2 * $base-line-height;
     margin: 0 0 0 rhythm(-.25, 2 * $base-font-size);
-    background-color: $primary-blue;
+    color: $primary-blue;
+    background-color: #fff;
     padding: rhythm(.25, 2 * $base-font-size);
     display: inline-block;
     text-shadow: none;
-    color: #fff;
 }
 
 h2 {
@@ -194,8 +196,12 @@ footer img {
 /* @group ----- 07. Home ----- */
 
 .home #intro {
-    background:url('../img/intro-bg.png') top center no-repeat;
-    background-size: cover;
+    position: relative;
+
+    &:before {
+        background:url('../img/intro-bg.png') top center no-repeat;
+        background-size: cover;
+    }
 }
 
 .home #intro .container > * {
@@ -222,8 +228,7 @@ footer img {
 }
 
 #features {
-    background-color: $primary-blue;
-    color: #fff;
+    background-color: $gray;
     padding: rhythm();
     text-align: center;
 }
@@ -235,7 +240,7 @@ footer img {
 }
 
 #features a {
-    color: saturate(lighten($primary-blue, 50%), 50%);
+    color: $primary-blue;
     font-family: "Oswald", sans-serif;
     text-transform: uppercase;
     font-weight: 300;
@@ -248,7 +253,7 @@ footer img {
     font-family: "Oswald", sans-serif;
     font-size: 1.5 * $base-font-size;
     margin-bottom: rhythm(1, 1.5 * $base-font-size);
-    border-bottom: 1px solid rgba(255,255,255,.08);
+    border-bottom: 1px solid $gray;
     padding: 0 rhythm(1, 1.5 * $base-font-size) rhythm(1, 1.5 * $base-font-size);
     font-weight: 300;
     text-align: center;
@@ -262,13 +267,7 @@ footer img {
 }
 
 #keep-up {
-    background-color: $primary-red;
-    color: #fff;
     overflow: hidden
-}
-
-#keep-up a {
-    color: lighten($primary-red, 50%);
 }
 
 #keep-up .twitter-icon,
@@ -312,18 +311,13 @@ footer img {
 
 /* @group ----- 08. Who We Are ----- */
 
-.who-we-are #intro {
+.who-we-are #intro:before {
     background:url('../img/whoweare-bg.jpg') center no-repeat;
     background-size: cover;
-
-    &:after {
-        background-color: rgba(0,0,0,.6);
-    }
 }
 
 .who-we-are #content nav {
-    background-color: $primary-red;
-    color: #fff;
+    background-color: $gray;
     padding: rhythm();
     margin-top: rhythm();
 }
@@ -332,10 +326,6 @@ footer img {
     margin-top: 0;
     text-transform: uppercase;
     font-size: 1.5 * $base-font-size;
-}
-
-.who-we-are #content nav a {
-    color: lighten($primary-red, 50%);
 }
 
 .who-we-are #content nav ul {
@@ -379,13 +369,9 @@ footer img {
 
 /* @group ----- 09. What We Do ----- */
 
-.what-we-do #intro {
+.what-we-do #intro:before {
     background:url('../img/whatwedo-bg.png') center no-repeat;
     background-size: cover;
-
-    &:after {
-        background-color: rgba(0,0,0,.6);
-    }
 }
 
 /* @end */
@@ -407,8 +393,7 @@ footer img {
 /* @group ----- 11. Our Story ----- */
 
 .our-story .preface {
-    background-color: $primary-red;
-    color: #fff;
+    background-color: $gray;
 }
 
 .our-story .preface h2 {
