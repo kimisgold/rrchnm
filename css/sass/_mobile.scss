@@ -123,10 +123,21 @@ nav ul {
 /* @group ----- 05. Header ----- */
 
 header {
-    overflow: hidden;
     @include container($container-width);
     padding: rhythm();
     background-color: $slate;
+    position: relative;
+
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: -9999px;
+        right: -9999px;
+        background-color: $slate;
+        z-index: -1;
+    }
 }
 
 header a {

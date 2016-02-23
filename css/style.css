@@ -557,12 +557,12 @@ table {
   /* @group ----- 05. Header ----- */
   /* line 125, sass/_mobile.scss */
   header {
-    overflow: hidden;
     max-width: 1280px;
     margin-left: auto;
     margin-right: auto;
     padding: 1.5em;
     background-color: #2D2D2D;
+    position: relative;
   }
   /* line 12, ../../../.rvm/gems/ruby-2.0.0-p0/gems/susy-2.2.6/sass/susy/output/support/_clearfix.scss */
   header:after {
@@ -570,13 +570,24 @@ table {
     display: block;
     clear: both;
   }
+  /* line 131, sass/_mobile.scss */
+  header:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -9999px;
+    right: -9999px;
+    background-color: #2D2D2D;
+    z-index: -1;
+  }
 
-  /* line 132, sass/_mobile.scss */
+  /* line 143, sass/_mobile.scss */
   header a {
     color: #fff;
   }
 
-  /* line 136, sass/_mobile.scss */
+  /* line 147, sass/_mobile.scss */
   .logo {
     height: 3em;
     width: 16.5em;
@@ -584,7 +595,7 @@ table {
     background-size: cover;
   }
 
-  /* line 143, sass/_mobile.scss */
+  /* line 154, sass/_mobile.scss */
   .logo a {
     height: 100%;
     width: 100%;
@@ -593,7 +604,7 @@ table {
     display: block;
   }
 
-  /* line 151, sass/_mobile.scss */
+  /* line 162, sass/_mobile.scss */
   nav#global .mobile-toggle:before {
     content: "";
     font-family: "FontAwesome";
@@ -608,12 +619,12 @@ table {
     text-align: center;
   }
 
-  /* line 165, sass/_mobile.scss */
+  /* line 176, sass/_mobile.scss */
   nav#global a {
     font-weight: 700;
   }
 
-  /* line 169, sass/_mobile.scss */
+  /* line 180, sass/_mobile.scss */
   nav#global ul {
     display: none;
     margin: 1.5em 0 0;
@@ -621,7 +632,7 @@ table {
     list-style-type: none;
   }
 
-  /* line 176, sass/_mobile.scss */
+  /* line 187, sass/_mobile.scss */
   nav#global li:not(:last-child) {
     border-color: rgba(0, 0, 0, 0.08);
     border-bottom-width: 0.0625em;
@@ -632,7 +643,7 @@ table {
 
   /* @end */
   /* @group ----- 06. Footer ----- */
-  /* line 186, sass/_mobile.scss */
+  /* line 197, sass/_mobile.scss */
   footer {
     max-width: 1280px;
     margin-left: auto;
@@ -647,7 +658,7 @@ table {
     clear: both;
   }
 
-  /* line 192, sass/_mobile.scss */
+  /* line 203, sass/_mobile.scss */
   footer img {
     max-height: 4.5em;
     width: auto;
@@ -655,18 +666,18 @@ table {
 
   /* @end */
   /* @group ----- 07. Home ----- */
-  /* line 201, sass/_mobile.scss */
+  /* line 212, sass/_mobile.scss */
   .home #intro {
     background: url("../img/intro-bg.png") top center no-repeat;
     background-size: cover;
   }
 
-  /* line 206, sass/_mobile.scss */
+  /* line 217, sass/_mobile.scss */
   .home #intro .container > * {
     display: inline;
   }
 
-  /* line 210, sass/_mobile.scss */
+  /* line 221, sass/_mobile.scss */
   .home #intro p {
     font-family: "Oswald", sans-serif;
     font-weight: 300;
@@ -675,7 +686,7 @@ table {
     margin: 0 auto;
   }
 
-  /* line 218, sass/_mobile.scss */
+  /* line 229, sass/_mobile.scss */
   .home #intro .container > a {
     background-color: #24455F;
     color: #fff;
@@ -687,7 +698,7 @@ table {
     display: inline-block;
   }
 
-  /* line 229, sass/_mobile.scss */
+  /* line 240, sass/_mobile.scss */
   #features {
     background-color: #7F1E1E;
     color: #fff;
@@ -695,7 +706,7 @@ table {
     text-align: center;
   }
 
-  /* line 236, sass/_mobile.scss */
+  /* line 247, sass/_mobile.scss */
   .feature:not(:last-child) {
     margin-bottom: 1.5em;
     border-color: rgba(255, 255, 255, 0.15);
@@ -704,7 +715,7 @@ table {
     padding-bottom: 1.4375em;
   }
 
-  /* line 242, sass/_mobile.scss */
+  /* line 253, sass/_mobile.scss */
   #features a {
     color: #ff9d9d;
     font-family: "Oswald", sans-serif;
@@ -714,7 +725,7 @@ table {
     display: block;
   }
 
-  /* line 251, sass/_mobile.scss */
+  /* line 262, sass/_mobile.scss */
   .hub-link {
     display: block;
     font-family: "Oswald", sans-serif;
@@ -725,7 +736,7 @@ table {
     font-weight: 300;
     text-align: center;
   }
-  /* line 261, sass/_mobile.scss */
+  /* line 272, sass/_mobile.scss */
   .hub-link:after {
     content: "";
     font-family: "FontAwesome";
@@ -733,12 +744,12 @@ table {
     margin-left: 0.25em;
   }
 
-  /* line 269, sass/_mobile.scss */
+  /* line 280, sass/_mobile.scss */
   #keep-up {
     overflow: hidden;
   }
 
-  /* line 273, sass/_mobile.scss */
+  /* line 284, sass/_mobile.scss */
   #keep-up .twitter-icon,
   #keep-up .facebook-icon {
     background-color: #fff;
@@ -750,32 +761,32 @@ table {
     text-align: center;
   }
 
-  /* line 284, sass/_mobile.scss */
+  /* line 295, sass/_mobile.scss */
   #keep-up .twitter-icon:before {
     content: "";
     font-family: "FontAwesome";
   }
 
-  /* line 289, sass/_mobile.scss */
+  /* line 300, sass/_mobile.scss */
   #keep-up .facebook-icon:before {
     content: "";
     font-family: "FontAwesome";
   }
 
-  /* line 294, sass/_mobile.scss */
+  /* line 305, sass/_mobile.scss */
   #keep-up .button {
     background-color: #fff;
     color: #7F1E1E;
   }
 
-  /* line 299, sass/_mobile.scss */
+  /* line 310, sass/_mobile.scss */
   #keep-up nav > ul > li {
     text-transform: uppercase;
     font-weight: 700;
     margin-bottom: 1.5em;
   }
 
-  /* line 305, sass/_mobile.scss */
+  /* line 316, sass/_mobile.scss */
   #keep-up nav ul > li > ul {
     text-transform: none;
     font-weight: normal;
@@ -783,17 +794,17 @@ table {
 
   /* @end */
   /* @group ----- 08. Who We Are ----- */
-  /* line 314, sass/_mobile.scss */
+  /* line 325, sass/_mobile.scss */
   .who-we-are #intro {
     background: url("../img/whoweare-bg.jpg") center no-repeat;
     background-size: cover;
   }
-  /* line 318, sass/_mobile.scss */
+  /* line 329, sass/_mobile.scss */
   .who-we-are #intro:after {
     background-color: rgba(0, 0, 0, 0.6);
   }
 
-  /* line 323, sass/_mobile.scss */
+  /* line 334, sass/_mobile.scss */
   .who-we-are #content nav {
     background-color: #7F1E1E;
     color: #fff;
@@ -801,24 +812,24 @@ table {
     margin-top: 1.5em;
   }
 
-  /* line 330, sass/_mobile.scss */
+  /* line 341, sass/_mobile.scss */
   .who-we-are #content nav h2 {
     margin-top: 0;
     text-transform: uppercase;
     font-size: 24px;
   }
 
-  /* line 336, sass/_mobile.scss */
+  /* line 347, sass/_mobile.scss */
   .who-we-are #content nav a {
     color: #ecb0b0;
   }
 
-  /* line 340, sass/_mobile.scss */
+  /* line 351, sass/_mobile.scss */
   .who-we-are #content nav ul {
     margin-bottom: 0;
   }
 
-  /* line 344, sass/_mobile.scss */
+  /* line 355, sass/_mobile.scss */
   .who-we-are #content nav > ul > li {
     text-transform: uppercase;
     font-family: "Oswald", sans-serif;
@@ -826,19 +837,19 @@ table {
     margin-bottom: 1.2em;
     font-weight: 300;
   }
-  /* line 351, sass/_mobile.scss */
+  /* line 362, sass/_mobile.scss */
   .who-we-are #content nav > ul > li:last-of-type {
     margin-bottom: 0;
   }
 
-  /* line 356, sass/_mobile.scss */
+  /* line 367, sass/_mobile.scss */
   .who-we-are #content nav > ul > li ul {
     text-transform: none;
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
   }
 
-  /* line 362, sass/_mobile.scss */
+  /* line 373, sass/_mobile.scss */
   .person {
     width: 100%;
     text-align: left;
@@ -846,7 +857,7 @@ table {
     margin: 1.5em 0;
   }
 
-  /* line 369, sass/_mobile.scss */
+  /* line 380, sass/_mobile.scss */
   .person .image {
     background-color: rgba(0, 0, 0, 0.08);
     width: 9em;
@@ -857,38 +868,38 @@ table {
 
   /* @end */
   /* @group ----- 09. What We Do ----- */
-  /* line 381, sass/_mobile.scss */
+  /* line 392, sass/_mobile.scss */
   .what-we-do #intro {
     background: url("../img/whatwedo-bg.png") center no-repeat;
     background-size: cover;
   }
-  /* line 385, sass/_mobile.scss */
+  /* line 396, sass/_mobile.scss */
   .what-we-do #intro:after {
     background-color: rgba(0, 0, 0, 0.6);
   }
 
   /* @end */
   /* @group ----- 10. Who We Work With ----- */
-  /* line 395, sass/_mobile.scss */
+  /* line 406, sass/_mobile.scss */
   .collab-type .entity {
     display: block;
     font-weight: bold;
   }
 
-  /* line 400, sass/_mobile.scss */
+  /* line 411, sass/_mobile.scss */
   .collab-type .project {
     font-style: italic;
   }
 
   /* @end */
   /* @group ----- 11. Our Story ----- */
-  /* line 408, sass/_mobile.scss */
+  /* line 419, sass/_mobile.scss */
   .our-story .preface {
     background-color: #24455F;
     color: #fff;
   }
 
-  /* line 413, sass/_mobile.scss */
+  /* line 424, sass/_mobile.scss */
   .our-story .preface h2 {
     margin: 0;
   }
